@@ -109,6 +109,23 @@ public class Controller
 		
 		return isValid;
 	}
+	
+	public boolean validDouble(String example)
+	{
+		boolean isValid = false;
+		
+		try
+		{
+			Double.parseDouble(example);
+			isValid = true;
+		}
+		catch(NumberFormatException oops)
+		{
+			System.out.println("Only floating point values are accepted AKA a number with a . in it");
+		}
+		
+		return isValid;
+	}
 
 	
 	
