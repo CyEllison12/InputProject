@@ -99,7 +99,7 @@ public class Controller
 		
 		try
 		{
-			Integer.parseInt(sample);
+			Integer.parseInt(sample);//detects if wrong value is entered
 			isValid = true;
 		}
 		catch(NumberFormatException error)
@@ -107,7 +107,7 @@ public class Controller
 			System.out.println("You need to type in a number mammal!");//this catches the code, and throws back an error message
 		}
 		
-		return isValid;
+		return isValid; //if gets an error gives error message, if not continues with program normally 
 	}
 	
 	public boolean validDouble(String example)
@@ -116,15 +116,15 @@ public class Controller
 		
 		try
 		{
-			Double.parseDouble(example);
+			Double.parseDouble(example);//if enter wrong value this detects it
 			isValid = true;
 		}
 		catch(NumberFormatException oops)
 		{
-			System.out.println("Only floating point values are accepted AKA a number with a . in it");
+			System.out.println("Only floating point values are accepted AKA a number with a . in it");//this catches the code, and throws back an error message
 		}
 		
-		return isValid;
+		return isValid; //if gets an error gives error message, if not continues with program normally 
 	}
 
 	
