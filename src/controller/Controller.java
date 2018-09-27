@@ -15,7 +15,7 @@ public class Controller
 		
 		//moreInput();
 		//loopy();
-		looop();
+		//looop();
 
 	}
 	
@@ -184,6 +184,7 @@ public class Controller
 		
 	}
 	private void looop()
+
 	{
 		boolean isPlaying = false;
 		int counting = 0;
@@ -262,5 +263,9 @@ public class Controller
 		}
 	}
 	
+	private void moreLoop()
+	{
+		
+	}
 	
 }
